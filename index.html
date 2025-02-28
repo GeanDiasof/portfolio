@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou eu?</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon/favicon-16x16.png">
+    <link rel="manifest" href="imagens/favicon/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fonte moderna */
+            background-image: url('imagens/Fundo\ site.jpeg'); /* Caminho para a imagem de fundo */
+            background-size: cover; /* Cobre toda a área do fundo */
+            background-position: center; /* Centraliza a imagem de fundo */
+            margin: 0; /* Remove margens padrão */
+            padding: 20px; /* Adiciona um pouco de espaço ao redor */
+            text-align: center; /* Centraliza todo o texto */
+        }
+
+        .overlay {
+            position: fixed; /* Fixa o overlay na tela */
+            top: 0; /* Alinha ao topo */
+            left: 0; /* Alinha à esquerda */
+            right: 0; /* Alinha à direita */
+            bottom: 0; /* Alinha à parte inferior */
+            background-color: rgba(0, 0, 0, 0.5); /* Preto com 50% de opacidade */
+            z-index: 1; /* Coloca o overlay acima da imagem de fundo */
+            backdrop-filter: blur(5px); /* Desfoca o fundo */
+        }
+
+        .content {
+            position: relative; /* Permite que o conteúdo fique acima do overlay */
+            z-index: 2; /* Garante que o conteúdo fique acima do overlay */
+            color: #ffffff; /* Cor do texto */
+        }
+
+        h1 {
+            font-size: 2.5em; /* Tamanho maior para o título */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para destaque */
+        }
+
+        h2 {
+            font-size: 2em; /* Tamanho do subtítulo */
+            margin-top: 20px; /* Espaço acima do subtítulo */
+            margin-bottom: 10px; /* Espaço abaixo do subtítulo */
+            color: #00ff62; /* Cor do subtítulo */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para destaque */
+        }
+
+        p {
+            font-size: 1.2em; /* Tamanho do texto do parágrafo */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            max-width: 800px; /* Largura máxima do parágrafo */
+            margin: 0 auto; /* Centraliza o parágrafo */
+            text-align: center; /* Alinha o texto ao centro */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra no texto para melhor visibilidade */
+        }
+
+        img {
+            width: 250px; /* Aumenta o tamanho da imagem */
+            height: 250px; /* Mantém a proporção */
+            border-radius: 50%; /* Faz a imagem ficar circular */
+            margin-top: 20px; /* Espaço acima da imagem */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+        }
+
+        ul {
+            list-style: none; /* Remove os marcadores da lista */
+            padding: 0; /* Remove o padding padrão */
+        }
+
+        li {
+            margin: 15px 0; /* Espaço entre os itens da lista */
+        }
+
+        img.icon {
+            width: 30px; /* Tamanho do ícone */
+            height: auto; /* Mantém a proporção */
+            vertical-align: middle; /* Alinha verticalmente com o texto */
+            margin-right: 10px; /* Espaço à direita do ícone */
+        }
+
+        a {
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: #007BFF; /* Cor do link */
+            font-weight: bold; /* Texto em negrito */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Sublinha o link ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="content"> <!-- Container para o conteúdo -->
+        <h1>Gean Emanuel Dias Lima</h1>
+        <img src="imagens/Gean Lima.jpg" alt="Gean Lima">
+
+        <h2>Quem sou Eu?</h2>
+        <p>Eu sou o Gean Lima, estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia. Atualmente, trabalho com suporte técnico de um servidor de internet e tô mergulhando de cabeça na área de redes e programação. Amo automações de processos e integração de tecnologias. Compartilho minhas experiências e dicas lá no dev.gean, então, se curte esse mundo de desenvolvimento, cola lá!</p>
+        
+        <h2>Como me encontrar?</h2>
+        <ul>
+            <li>
+                <img class="icon" src="imagens/icone-instagram.png" alt="Instagram">
+                <a href="https://www.instagram.com/geanlimaof/" target="_blank">Instagram</a> <span>- Me siga no Instagram.</span>
+            </li>
+            <li>
+                <img class="icon" src="imagens/icone-linkedin.png" alt="Linkedin">
+                <a href="https://www.linkedin.com/in/geanlimaof/" target="_blank">Linkedin</a> <span>- Confira o meu perfil no Linkedin.</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
